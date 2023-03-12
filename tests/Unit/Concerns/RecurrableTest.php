@@ -7,34 +7,34 @@ namespace Tests\Unit\Concerns;
 use Tests\TestCase;
 
 /**
- * @covers \PreemStudio\Recurring\Concerns\Recurring
+ * @covers \PreemStudio\Recurrable\Concerns\Recurrable
  */
-class RecurringTest extends TestCase
+final class RecurrableTest extends TestCase
 {
     /** @test */
     public function recurring_instantiates_builder()
     {
-        $recurring = new RecurringExample;
+        $recurring = new RecurrableExample;
 
         $builder = $recurring->recurr();
 
-        $this->assertTrue($builder instanceof \PreemStudio\Recurring\Builder);
+        $this->assertTrue($builder instanceof \PreemStudio\Recurrable\Builder);
     }
 
     /** @test */
     public function recurring_model_instantiates_builder()
     {
-        $recurring = new RecurringModelExample;
+        $recurring = new RecurrableModelExample;
 
         $builder = $recurring->recurr();
 
-        $this->assertTrue($builder instanceof \PreemStudio\Recurring\Builder);
+        $this->assertTrue($builder instanceof \PreemStudio\Recurrable\Builder);
     }
 }
 
-class RecurringExample
+final class RecurrableExample
 {
-    use \PreemStudio\Recurring\Concerns\Recurring;
+    use \PreemStudio\Recurrable\Concerns\Recurrable;
 
     private $start_at = '';
 
@@ -49,9 +49,9 @@ class RecurringExample
     private $count = null;
 }
 
-class RecurringModelExample extends \Illuminate\Database\Eloquent\Model
+final class RecurrableModelExample extends \Illuminate\Database\Eloquent\Model
 {
-    use \PreemStudio\Recurring\Concerns\Recurring;
+    use \PreemStudio\Recurrable\Concerns\Recurrable;
 
     private $start_at = '';
 

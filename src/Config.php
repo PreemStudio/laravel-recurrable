@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PreemStudio\Recurring;
+namespace PreemStudio\Recurrable;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Recurr\Frequency;
 
-class Config implements Arrayable
+final class Config implements Arrayable
 {
     private string $startDate;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PreemStudio\Recurring;
+namespace PreemStudio\Recurrable;
 
 use Carbon\Carbon;
 use DateTime;
@@ -13,7 +13,7 @@ use Recurr\Rule;
 use Recurr\Transformer\ArrayTransformer;
 use Recurr\Transformer\ArrayTransformerConfig;
 
-class Builder
+final class Builder
 {
     private $recurring;
 
@@ -120,7 +120,7 @@ class Builder
 
     private function buildConfig(): Config
     {
-        $config = $this->recurring->getRecurringConfig();
+        $config = $this->recurring->getRecurrableConfig();
 
         return new Config(
             $config['start_date'],

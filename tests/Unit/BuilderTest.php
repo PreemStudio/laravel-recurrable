@@ -8,14 +8,14 @@ use Carbon\Carbon;
 use Tests\TestCase;
 
 /**
- * @covers \PreemStudio\Recurring\Builder
+ * @covers \PreemStudio\Recurrable\Builder
  */
-class BuilderTest extends TestCase
+final class BuilderTest extends TestCase
 {
     /** @test */
     public function next_returns_carbon_instance()
     {
-        $recurring = new RecurringClass(['count' => 2]);
+        $recurring = new RecurrableClass(['count' => 2]);
 
         $builder = $recurring->recurr();
 
@@ -25,7 +25,7 @@ class BuilderTest extends TestCase
     /** @test */
     public function next_returns_false_if_no_more_recurrances()
     {
-        $recurring = new RecurringClass(['count' => 1]);
+        $recurring = new RecurrableClass(['count' => 1]);
 
         $builder = $recurring->recurr();
 
@@ -33,9 +33,9 @@ class BuilderTest extends TestCase
     }
 }
 
-class RecurringClass
+final class RecurrableClass
 {
-    use \PreemStudio\Recurring\Concerns\Recurring;
+    use \PreemStudio\Recurrable\Concerns\Recurrable;
 
     private string $start_at;
 

@@ -1,11 +1,11 @@
 {
-    "name": "preemstudio/laravel-recurring",
+    "name": "preemstudio/laravel-recurrable",
     "description": "A package to easily use recurrence rules with Laravel.",
     "license": "MIT",
     "keywords": [
         "PreemStudio",
         "laravel",
-        "laravel-recurring"
+        "laravel-recurrable"
     ],
     "authors": [
         {
@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/preemstudio/laravel-recurring",
+    "homepage": "https://github.com/preemstudio/laravel-recurrable",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
@@ -39,7 +39,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "PreemStudio\\Recurring\\": "src"
+            "PreemStudio\\Recurrable\\": "src"
         }
     },
     "autoload-dev": {

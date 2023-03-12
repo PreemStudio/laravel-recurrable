@@ -1,9 +1,9 @@
-# Laravel Recurring
+# Laravel Recurrable
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/preemstudio/laravel-recurring.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-recurring)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-recurring/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/preemstudio/laravel-recurring/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-recurring/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-recurring/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-recurring.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-recurring)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/preemstudio/laravel-recurrable.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-recurrable)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-recurrable/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/preemstudio/laravel-recurrable/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-recurrable/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-recurrable/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-recurrable.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-recurrable)
 
 A package to easily use recurrence rules with Laravel.
 
@@ -12,7 +12,7 @@ A package to easily use recurrence rules with Laravel.
 You can install the package via composer:
 
 ```bash
-composer require preemstudio/laravel-recurring
+composer require preemstudio/laravel-recurrable
 ```
 
 ## Usage

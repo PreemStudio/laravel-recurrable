@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace PreemStudio\Recurring\Concerns;
+namespace PreemStudio\Recurrable\Concerns;
 
-use PreemStudio\Recurring\Builder;
+use PreemStudio\Recurrable\Builder;
 
-trait Recurring
+trait Recurrable
 {
     public function recurr(): Builder
     {
         return new Builder($this);
     }
 
-    public function getRecurringConfig(): array
+    public function getRecurrableConfig(): array
     {
         return [
             'start_date' => $this->start_at,
