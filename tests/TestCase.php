@@ -6,6 +6,9 @@ namespace Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
+/**
+ * @internal
+ */
 abstract class TestCase extends OrchestraTestCase
 {
     //

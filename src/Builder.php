@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace PreemStudio\Recurrable;
 
 use Carbon\Carbon;
-use DateTime;
 use DateTimeZone;
 use Illuminate\Support\Str;
 use Recurr\RecurrenceCollection;
@@ -22,7 +21,7 @@ final class Builder
     public function __construct($recurring)
     {
         $this->recurring = $recurring;
-        $this->config    = $this->buildConfig();
+        $this->config = $this->buildConfig();
     }
 
     public function first()
@@ -49,7 +48,7 @@ final class Builder
             return false;
         }
 
-        if (! $next = $this->schedule()->next()) {
+        if (!$next = $this->schedule()->next()) {
             return false;
         }
 
@@ -67,10 +66,10 @@ final class Builder
 
     public function schedule(): RecurrenceCollection
     {
-        $transformerConfig = new ArrayTransformerConfig;
+        $transformerConfig = new ArrayTransformerConfig();
         $transformerConfig->enableLastDayOfMonthFix();
 
-        $transformer = new ArrayTransformer;
+        $transformer = new ArrayTransformer();
         $transformer->setConfig($transformerConfig);
 
         return $transformer->transform($this->rule());
@@ -80,18 +79,18 @@ final class Builder
     {
         $config = $this->getConfig();
 
-        $rule = (new Rule)
-            ->setStartDate(new DateTime($config['start_date'], new DateTimeZone($config['timezone'])))
+        $rule = (new Rule())
+            ->setStartDate(new \DateTimeImmutable($config['start_date'], new DateTimeZone($config['timezone'])))
             ->setTimezone($config['timezone'])
             ->setFreq($this->getFrequencyType())
             ->setInterval($config['interval']);
 
-        if (! empty($config['count'])) {
+        if (!empty($config['count'])) {
             $rule = $rule->setCount($config['count']);
         }
 
-        if (! empty($config['end_date'])) {
-            $rule = $rule->setEndDate(new DateTime($config['end_date'], new DateTimeZone($config['timezone'])));
+        if (!empty($config['end_date'])) {
+            $rule = $rule->setEndDate(new \DateTimeImmutable($config['end_date'], new DateTimeZone($config['timezone'])));
         }
 
         return $rule;
@@ -101,21 +100,21 @@ final class Builder
     {
         $frequency = $this->getFromConfig('frequency');
 
-        if (! in_array($frequency, $this->config->getFrequencies(), true)) {
-            throw new \InvalidArgumentException("$frequency is not a valid frequency");
+        if (!\in_array($frequency, $this->config->getFrequencies(), true)) {
+            throw new \InvalidArgumentException("{$frequency} is not a valid frequency");
         }
 
         return $frequency;
     }
 
-    private function getFromConfig($key)
-    {
-        return $this->config->{'get'.Str::studly($key)}();
-    }
-
     public function getConfig(): array
     {
         return $this->config->toArray();
+    }
+
+    private function getFromConfig($key)
+    {
+        return $this->config->{'get'.Str::studly($key)}();
     }
 
     private function buildConfig(): Config
@@ -128,7 +127,7 @@ final class Builder
             $config['timezone'],
             $config['frequency'],
             $config['interval'],
-            $config['count']
+            $config['count'],
         );
     }
 }

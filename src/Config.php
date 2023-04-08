@@ -22,11 +22,11 @@ final class Config implements Arrayable
     private ?int $count;
 
     private $frequencies = [
-        Frequency::YEARLY   => 'YEARLY',
-        Frequency::MONTHLY  => 'MONTHLY',
-        Frequency::WEEKLY   => 'WEEKLY',
-        Frequency::DAILY    => 'DAILY',
-        Frequency::HOURLY   => 'HOURLY',
+        Frequency::YEARLY => 'YEARLY',
+        Frequency::MONTHLY => 'MONTHLY',
+        Frequency::WEEKLY => 'WEEKLY',
+        Frequency::DAILY => 'DAILY',
+        Frequency::HOURLY => 'HOURLY',
         Frequency::MINUTELY => 'MINUTELY',
         Frequency::SECONDLY => 'SECONDLY',
     ];
@@ -34,11 +34,11 @@ final class Config implements Arrayable
     public function __construct(string $startDate, string $endDate, string $timezone, string $frequency, int $interval, ?int $count = null)
     {
         $this->startDate = $startDate;
-        $this->endDate   = $endDate;
-        $this->timezone  = $timezone;
+        $this->endDate = $endDate;
+        $this->timezone = $timezone;
         $this->frequency = $frequency;
-        $this->interval  = $interval;
-        $this->count     = $count;
+        $this->interval = $interval;
+        $this->count = $count;
     }
 
     public function getStartDate(): string
@@ -122,11 +122,11 @@ final class Config implements Arrayable
     {
         return [
             'start_date' => $this->startDate,
-            'end_date'   => $this->endDate,
-            'timezone'   => $this->timezone,
-            'frequency'  => $this->frequency,
-            'interval'   => $this->interval,
-            'count'      => $this->count,
+            'end_date' => $this->endDate,
+            'timezone' => $this->timezone,
+            'frequency' => $this->frequency,
+            'interval' => $this->interval,
+            'count' => $this->count,
         ];
     }
 }

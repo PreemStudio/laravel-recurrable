@@ -7,28 +7,28 @@ namespace Tests\Unit\Concerns;
 use Tests\TestCase;
 
 /**
+ * @internal
+ *
  * @covers \PreemStudio\Recurrable\Concerns\Recurrable
  */
 final class RecurrableTest extends TestCase
 {
-    /** @test */
-    public function recurring_instantiates_builder()
+    public function test_recurring_instantiates_builder(): void
     {
-        $recurring = new RecurrableExample;
+        $recurring = new RecurrableExample();
 
         $builder = $recurring->recurr();
 
-        $this->assertTrue($builder instanceof \PreemStudio\Recurrable\Builder);
+        self::assertInstanceOf(\PreemStudio\Recurrable\Builder::class, $builder);
     }
 
-    /** @test */
-    public function recurring_model_instantiates_builder()
+    public function test_recurring_model_instantiates_builder(): void
     {
-        $recurring = new RecurrableModelExample;
+        $recurring = new RecurrableModelExample();
 
         $builder = $recurring->recurr();
 
-        $this->assertTrue($builder instanceof \PreemStudio\Recurrable\Builder);
+        self::assertInstanceOf(\PreemStudio\Recurrable\Builder::class, $builder);
     }
 }
 
@@ -46,7 +46,7 @@ final class RecurrableExample
 
     private $interval = 0;
 
-    private $count = null;
+    private $count;
 }
 
 final class RecurrableModelExample extends \Illuminate\Database\Eloquent\Model
@@ -63,5 +63,5 @@ final class RecurrableModelExample extends \Illuminate\Database\Eloquent\Model
 
     private $interval = 0;
 
-    private $count = null;
+    private $count;
 }

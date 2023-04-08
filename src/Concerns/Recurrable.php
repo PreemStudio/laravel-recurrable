@@ -17,11 +17,11 @@ trait Recurrable
     {
         return [
             'start_date' => $this->start_at,
-            'end_date'   => $this->end_at,
-            'timezone'   => $this->timezone,
-            'frequency'  => $this->frequency,
-            'interval'   => $this->interval,
-            'count'      => $this->count,
+            'end_date' => $this->end_at,
+            'timezone' => $this->timezone,
+            'frequency' => $this->frequency,
+            'interval' => $this->interval,
+            'count' => $this->count,
         ];
     }
 }
