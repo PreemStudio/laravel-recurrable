@@ -1,0 +1,96 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method getStart\\(\\) on mixed\\.$#"
+			count: 4
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:__construct\\(\\) has parameter \\$recurring with no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:current\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:first\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:getFromConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:getFromConfig\\(\\) has parameter \\$key with no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:last\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Builder\\:\\:next\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Property PreemStudio\\\\Recurrable\\\\Builder\\:\\:\\$recurring has no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Class PreemStudio\\\\Recurrable\\\\Config implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:getCount\\(\\) should return int but returns int\\|null\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:getEndDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setCount\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setEndDate\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setFrequency\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setInterval\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setStartDate\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method PreemStudio\\\\Recurrable\\\\Config\\:\\:setTimezone\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Property PreemStudio\\\\Recurrable\\\\Config\\:\\:\\$frequencies has no type specified\\.$#"
+			count: 1
+			path: src/Config.php
