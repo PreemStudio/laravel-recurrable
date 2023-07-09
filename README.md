@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/BombenProdukt/laravel-recurrable/actions">
+    <a href="https://github.com/faustbrian/laravel-recurrable/actions">
         <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-recurrable" alt="Checks" />
     </a>
     <a href="https://packagist.org/packages/bombenprodukt/laravel-recurrable">
@@ -21,7 +21,7 @@
 
 ## About Laravel Recurrable
 
-This project was created by, and is maintained by [BombenProdukt](https://github.com/BombenProdukt), and is a package to easily use recurrence rules with [Laravel](https://laravel.com/). Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
+This project was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and is a package to easily use recurrence rules with [Laravel](https://laravel.com/). Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
 
 ## Installation
 
