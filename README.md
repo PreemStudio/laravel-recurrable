@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-recurrable/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-recurrable" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-recurrable">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-recurrable" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-recurrable">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-recurrable" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-recurrable">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-recurrable" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Recurrable
 
