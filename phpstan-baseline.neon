@@ -6,6 +6,11 @@ parameters:
 			path: src/Builder.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Builder.php
+
+		-
 			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:__construct\\(\\) has parameter \\$recurring with no type specified\\.$#"
 			count: 1
 			path: src/Builder.php
@@ -41,7 +46,17 @@ parameters:
 			path: src/Builder.php
 
 		-
+			message: "#^Only booleans are allowed in a negated boolean, mixed given\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
 			message: "#^Property BombenProdukt\\\\Recurrable\\\\Builder\\:\\:\\$recurring has no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Variable method call on BombenProdukt\\\\Recurrable\\\\Config\\.$#"
 			count: 1
 			path: src/Builder.php
 
