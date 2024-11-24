@@ -1,0 +1,111 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method getStart\\(\\) on mixed\\.$#"
+			count: 4
+			path: src/Builder.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:__construct\\(\\) has parameter \\$recurring with no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:current\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:first\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:getFromConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:getFromConfig\\(\\) has parameter \\$key with no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:last\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Builder\\:\\:next\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Only booleans are allowed in a negated boolean, mixed given\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Recurrable\\\\Builder\\:\\:\\$recurring has no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Variable method call on BombenProdukt\\\\Recurrable\\\\Config\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Class BombenProdukt\\\\Recurrable\\\\Config implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:getCount\\(\\) should return int but returns int\\|null\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:getEndDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setCount\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setEndDate\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setFrequency\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setInterval\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setStartDate\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Recurrable\\\\Config\\:\\:setTimezone\\(\\) has parameter \\$value with no type specified\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Recurrable\\\\Config\\:\\:\\$frequencies has no type specified\\.$#"
+			count: 1
+			path: src/Config.php
