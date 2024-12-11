@@ -1,0 +1,196 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Cannot call method getStart\\(\\) on mixed\\.$#"
+			count: 4
+			path: src/Builder.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:__construct\\(\\) has parameter \\$recurring with no type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:current\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:first\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:getConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:getFromConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:last\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Builder\\:\\:next\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Only booleans are allowed in a negated boolean, mixed given\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Variable method call on BaseCodeOy\\\\Recurrable\\\\Config\\.$#"
+			count: 1
+			path: src/Builder.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Recurrable\\\\Config implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Config\\:\\:getCount\\(\\) should return int but returns int\\|null\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Recurrable\\\\Config\\:\\:getFrequencies\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Recurrable\\\\Config\\:\\:\\$frequencies type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Config.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertFalse\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/BuilderTest.php
+
+		-
+			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/BuilderTest.php
+
+		-
+			message: "#^Method Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:getRecurrableConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$count has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$count is never written, only read\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$end_at has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$frequency has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$interval has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$start_at has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableExample\\:\\:\\$timezone has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableExample.php
+
+		-
+			message: "#^Method Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:getRecurrableConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$count has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$count is never written, only read\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$end_at has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$frequency has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$interval has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$start_at has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Property Tests\\\\Unit\\\\Concerns\\\\RecurrableModelExample\\:\\:\\$timezone has no type specified\\.$#"
+			count: 1
+			path: tests/Unit/Concerns/RecurrableModelExample.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\) with 'BaseCodeOy\\\\\\\\Recurrable\\\\\\\\Builder' and BaseCodeOy\\\\Recurrable\\\\Builder will always evaluate to true\\.$#"
+			count: 2
+			path: tests/Unit/Concerns/RecurrableTest.php
+
+		-
+			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\)\\.$#"
+			count: 2
+			path: tests/Unit/Concerns/RecurrableTest.php
+
+		-
+			message: "#^Method Tests\\\\Unit\\\\RecurrableClass\\:\\:__construct\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Unit/RecurrableClass.php
+
+		-
+			message: "#^Method Tests\\\\Unit\\\\RecurrableClass\\:\\:getRecurrableConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Unit/RecurrableClass.php
