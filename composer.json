@@ -25,8 +25,8 @@
         "php": "^8.3",
         "basecodeoy/crate": "^1.0.0",
         "illuminate/contracts": "^11.0",
-        "nesbot/carbon": "^2.72.5",
-        "simshaun/recurr": "^5.0.2"
+        "nesbot/carbon": "^2.72.6",
+        "simshaun/recurr": "^5.0.3"
     },
     "require-dev": {
         "basecodeoy/standards": "^1.1.1"
